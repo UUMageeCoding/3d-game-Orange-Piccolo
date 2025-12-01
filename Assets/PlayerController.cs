@@ -115,7 +115,7 @@ public class ThirdPersonController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "LevelChange")
+        if (other.tag == "HomeSceneChange")
         {
             SceneManager.LoadScene(1);
         }
