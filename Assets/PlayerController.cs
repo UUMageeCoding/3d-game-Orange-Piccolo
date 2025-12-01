@@ -1,4 +1,6 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ThirdPersonController : MonoBehaviour
 {
@@ -109,5 +111,13 @@ public class ThirdPersonController : MonoBehaviour
         
         // Apply vertical movement
         controller.Move(playerVelocity * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "LevelChange")
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }
