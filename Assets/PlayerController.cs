@@ -119,5 +119,10 @@ public class ThirdPersonController : MonoBehaviour
         {
             SceneManager.LoadScene(1);
         }
+
+        if (other.tag == "StreetSceneChange")
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }
