@@ -6,6 +6,7 @@ TagManager:
   tags:
   - HomeSceneChange
   - StreetSceneChange
+  - ShopSceneChange
   layers:
   - Default
   - TransparentFX

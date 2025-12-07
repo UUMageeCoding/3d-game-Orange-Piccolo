@@ -124,5 +124,10 @@ public class ThirdPersonController : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
+
+        if (other.tag == "ShopSceneChange")
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 }
